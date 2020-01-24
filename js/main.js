@@ -37,6 +37,15 @@
         pase_dosdias.addEventListener('blur', mostrarDias);
         pase_completo.addEventListener('blur', mostrarDias);
 
+        nombre.addEventListener('blur', function(){
+            if(this.value == ''){
+                errorDiv.style.display = 'block';
+                errorDiv.innerHTML = 'Este campo es obligatorio';
+                this.style.border = '1px solid red';
+                errorDiv.style.border = '1px solid red';
+            }
+        })
+
         function calcularMontos(event){
             event.preventDefault();
             if(regalo.value === '') {

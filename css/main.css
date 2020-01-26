@@ -629,7 +629,6 @@ div.tabla-precio p.numero {
 
 div.mapa {
   height: 420px;
-  background: green;
 }
 
 /* Testimoniales */
@@ -901,6 +900,7 @@ div.resumen input {
   clear: both;
   padding: 20px;
   text-align: center;
+  display: none;
 }
 /* ==========================================================================
    Helper classes
